@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách Trong Nước | Văn Học</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="container-fluid fixed-top py-3 bg-bk">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
+
+            </div>
+            <div class="col px-3 px-md-0">
+                <!-- toggler -->
+                <a data-toggle="collapse" href="#" data-target=".collapse" role="button" class="p-1">
+                    <i class="fa fa-bars fa-lg"></i>
+                </a>
+            </div>
+            <div class="top-prof">
+                <div class="prof-name">
+                    xin chào, Nhật
+                </div>
+                <div class="prof-img">
+                    <img src="./images/ava1.jpg" alt="Paris" width="30" height="30">
+                </div>
+                
+                <div class="dropdown tdrop">
+                    <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dr-mn">
+                      <li class="lo"><a href="index.html">Đăng Xuất</a></li>
+                      <li class="l1"><a href="#">Tùy chọn</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid px-0 h-100 dr-lf">
+        <div class="row vh-100 collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 p-0 vh-100 h-100 text-white w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
+                <!-- fixed sidebar -->
+                <div class="navbar-dark bg-ligh position-fixed h-100 w-sidebar x">
+                     <button class="dropdown-btn">Quản Lí Sản Phẩm
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container drp-0">
+                        <a href="Adminliterary.html">Sách Trong Nước</a>
+                        <a href="#">Sách Nước Ngoài</a>
+                        
+                      </div>
+                      
+                      <button class="dropdown-btn">Quản Lí User 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                        <a href="UserManager.html">Tài Khoản Thường</a>
+                      </div>
+                      <button class="dropdown-btn">Quản Lí Giao Dịch
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                          
+                        <a href="DealManager.html">Hóa Đơn</a>
+                        <a href="Count.html">Số Lượng Hàng</a>
+                      
+                      </div>
+                    
+                </div>
+            </div>
+            <div class="col p-3">
+                <div class="main-content">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <a href="HomeAdmin.html">Trang Chủ</a>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                Sách Trong Nước
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="Adminliterary.html">Văn Học</a>
+                            </li>
+                        </ul>
+                        <div class="row t">
+                            <div class="col-xs-12">
+                                <table id="customers">
+                                    <tr>
+                                      <th>Mã</th>
+                                      <th class="bif">Tên Sách</th>
+                                      <th>NXB</th>
+                                      <th>Nhà Cung Cấp</th>
+                                      <th>Giá</th>
+                                      <th>Tác Giả</th>
+                                      <th>Hình Thức</th>
+                                      <th>Số Lượng</th>
+                                      <th>Hình ảnh</th>
+                                      <th>Mã Sản phẩm</th>
+                                      <th>Xóa</th>
+                                      <th>Sửa</th>
+                                    </tr>
+                                    <tr>
+                                      <td>VH123</td>
+                                      <td>Nhà Giả Kim</td>
+                                      <td>NXB Văn Học</td>
+                                      <td>Nhã Nam</td>
+                                      <td>240000đ</td>
+                                      <td>Tác Giả</td>
+                                      <td>Bìa mềm</td>
+                                      <td>245</td>
+                                      <td>a.png</td>
+                                      <td>M1344</td>
+                                      <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                                      <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+    
+                                    </tr>
+                                  </table>
+                            </div>
+                         </div>
+                         
+                         <div class="pagin">
+                            <div class="insert">
+                                <button onclick="document.getElementById('id01').style.display='block'" 
+                                style="width:auto;">Thêm Sách</button>
+                             </div>
+                             <div class="in">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                             </div>
+                            
+                         </div>
+                     
+                     </div>
+                     
+
+                     
+
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="Adminliterary.html" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'"
+               class="close" title="Close Modal">&times;</span>
+            </div>
+        
+            <div class="container-1 vc">
+                <label for="uname"><b>Mã Sách</b></label>
+              <input type="text" placeholder="Nhập Mã Sách" name="uname" required>
+
+              <label for="uname"><b>Tên Sách</b></label>
+              <input type="text" placeholder="Nhập Tên Sách" name="uname" required>
+        
+              <label for="psw"><b>Nhà Xuất Bản</b></label>
+              <input type="text" placeholder="Nhà Xuất Bản" name="psw" required>
+              <label for="psw"><b>Nhà Cung Cấp</b></label>
+              <input type="text" placeholder="Nhà Cung Cấp" name="psw" required>
+              <label for="psw"><b>Tác Giả</b></label>
+              <input type="text" placeholder="Tác Giả" name="psw" required>
+              <label for="psw"><b>Giá</b></label>
+              <input type="text" placeholder="Giá" name="psw" required>
+              <div class="xx1">
+                <label for="psw"><b>Hình Thức</b></label>
+                <select id="ht" name="ht">
+                  <option value="Bìa Mềm">Bìa Mềm</option>
+                  <option value="Bìa Cứng">Bìa Cứng</option>
+                </select>   
+              </div>
+              <label for="psw"><b>Số Lượng</b></label>
+                <input type="text" placeholder="Số Lượng" name="psw" required>
+                <label for="psw"><b>Hình Ảnh</b></label>
+                <input type="file" id="input-file-now-custom-1" class="file-upload" />
+                
+              <button type="submit" id="x" onclick="t()">Hoàn Thành</button>
+            </div>
+        
+            <div class="container-1" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" 
+              class="cancelbtn">Cancel</button>
+            </div>
+          </form>
+
+    </div>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function t(){
+                var test = document.getElementById("x");
+                test = alert("Thêm Thành Công");
+            }
+            
+        </script>
+    
+</body>
+</html>
+

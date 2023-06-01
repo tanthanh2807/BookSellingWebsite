@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa Đơn</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="print.css">
+    
+</head>
+<body>
+    <div class="container-fluid fixed-top py-3 bg-bk">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
+
+            </div>
+            <div class="col px-3 px-md-0">
+                <!-- toggler -->
+                <a data-toggle="collapse" href="#" data-target=".collapse" role="button" class="p-1">
+                    <i class="fa fa-bars fa-lg"></i>
+                </a>
+            </div>
+            <div class="top-prof">
+                <div class="prof-name">
+                    xin chào, Nhật
+                </div>
+                <div class="prof-img">
+                    <img src="./images/ava1.jpg" alt="Paris" width="30" height="30">
+                </div>
+                
+                <div class="dropdown tdrop">
+                    <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dr-mn">
+                      <li class="lo"><a href="index.html">Đăng Xuất</a></li>
+                      <li class="l1"><a href="#">Tùy chọn</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid px-0 h-100 dr-lf">
+        <div class="row vh-100 collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 p-0 vh-100 h-100 text-white w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
+                <!-- fixed sidebar -->
+                <div class="navbar-dark bg-ligh position-fixed h-100 w-sidebar x">
+                    <button class="dropdown-btn">Quản Lí Sản Phẩm
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container drp-0">
+                        <a href="Adminliterary.html">Sách Trong Nước</a>
+                        <a href="#">Sách Nước Ngoài</a>
+                        
+                      </div>
+                      
+                      <button class="dropdown-btn">Quản Lí User 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                        <a href="UserManager.html">Tài Khoản Thường</a>
+                      </div>
+                      <button class="dropdown-btn">Quản Lí Giao Dịch
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                          
+                        <a href="DealManager.html">Hóa Đơn</a>
+                        <a href="Count.html">Số Lượng Hàng</a>
+                      
+                </div>
+                    
+            </div>
+        </div>
+            <div class="col p-3">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li class="xt1">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <a href="HomeAdmin.html">Trang Chủ</a>
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            Quản Lí Giao Dịch
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            <a href="DealManager.html">Giao Dịch</a>
+                        </li>
+                        <div class="f-search">
+                            <form action="" class="example">
+                                <input type="text" placeholder="Search.." name="search2">
+                                 <button type="submit"><i class="fa fa-search"></i></button>
+                            
+                            </form>
+                        </div>
+                    </ul>
+                   
+                </div>
+                <div class="container">
+                    <div class="deal">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mã Giao Dịch</th>
+                                <th>Mã Sản Phẩm</th>
+                                <th>In</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>GD1</td>
+                                <td>SP123</td>
+                                <td><button data-toggle="modal"  data-target="#MyModal">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
+                                </button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>GD2</td>
+                                <td>SP123</td>
+                                <td><button data-toggle="modal"  data-target="#MyModal">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
+                                </button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>GD3</td>
+                                <td>SP123</td>
+                                <td><button data-toggle="modal"  data-target="#MyModal">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
+                                </button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>GD4</td>
+                                <td>SP123</td>
+                                <td><button data-toggle="modal"  data-target="#MyModal">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
+                                </button></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>GD5</td>
+                                <td>SP123</td>
+                                <td><button data-toggle="modal"  data-target="#MyModal">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
+                                </button></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>GD6</td>
+                                <td>SP123</td>
+                                <td><button data-toggle="modal"  data-target="#MyModal">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
+                                </button></td>
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="cl cl2">
+                        <ul class="pagination c">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal-->
+    <div id="printThis">
+        <div id="MyModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          
+          <div class="modal-dialog modal-lg">
+            
+            <!-- Modal Content: begins -->
+            <div class="modal-content">
+            
+              <!-- Modal Body -->  
+              <div class="modal-body">
+                <div class="body-message">
+                    <div class="in-title">
+                        <h1>Hóa Đơn</h1>
+                    </div>
+                    <div class="in-content">
+                        <div class="in-x1">
+                            <h1>Đơn vị bán Hàng: BookStore.vn</h1>
+                            <p>Mã Giao dịch: M123</p>
+                            <p>Địa chỉ: xxx</p>
+                            <p>Điện Thoại: 01332134343</p>
+                            <hr>
+                        </div>
+                        <div class="in-x1">
+                            <h1>Người mua hàng: Lê Thiện Nhân</h1>
+                            <p>Số Điện Thoại: 0843142161</p>
+                            <p>Email: ltnhan.19ce@sict.udn.vn</p>
+                            <p>Địa chỉ: tam kỳ</p>
+                            <p>Hình Thức Thanh Toán: internet - banking</p>
+                            <p>Số tài Khoản: 2323232</p>
+                        </div>
+                        <div class="deal">
+                            <table class="1"> 
+                                <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên Sản Phẩm</th>
+                                    <th>Số Lượng</th>
+                                    <th>Đơn Giá</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nhà Giả Kim</td>
+                                    <td>5</td>
+                                    <td>100.000đ</td>
+                                    <td>500.000đ</td>
+                                </tr>
+                                
+                                </tbody>
+                            </table>
+                            <p>Cộng Tiền Hàng: </p>
+                            <hr/>
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
+            
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+               <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              <button id="btnPrint" type="button" class="btn btn-default">Print</button>
+              </div>
+            
+            </div>
+            <!-- Modal Content: ends -->
+            
+          </div>
+            </div>
+        </div>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+    </script>
+    <script>
+        document.getElementById("btnPrint").onclick = function () {
+        printElement(document.getElementById("printThis"));
+  }
+  
+  function printElement(elem) {
+      var domClone = elem.cloneNode(true);
+      
+      var $printSection = document.getElementById("printSection");
+      
+      if (!$printSection) {
+          var $printSection = document.createElement("div");
+          $printSection.id = "printSection";
+          document.body.appendChild($printSection);
+      }
+      
+      $printSection.innerHTML = "";
+      $printSection.appendChild(domClone);
+      window.print();
+  }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.css">
+    
+   
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <a href="index.html"><img src="./images/logo.png" class="logo"></a>
+            <input type="text" class="form-control" placeholder="Tìm Kiếm...">
+            
+        </div> 
+        <div class="menu-bar">
+            <ul>
+                <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>Giỏ Hàng</a></li>    
+                <li><a href="Account.html">Đăng Nhập</a></li>    
+                <li><a href="Register.html">Đăng Kí</a></li>    
+             </ul>   
+        </div> 
+    </div>
+    <div class="container">
+        <div class="card shopping-cart">
+                 <div class="card-header bg-dark text-light">
+                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                     Giỏ Hàng
+                     <a href="MoreButton.html" class="btn btn-outline-info btn-sm pull-right">Tiếp tục mua sắm</a>
+                     <div class="clearfix"></div>
+                 </div>
+                 <div class="card-body">
+                         <!-- PRODUCT -->
+                         <div class="row row1">
+                             <div class="col-12 col-sm-12 col-md-2 text-center">
+                                     <img class="img-responsive" src="./images/bxh-3.jpg" alt="prewiew" width="120" height="80">
+                             </div>
+                             <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6 x">
+                                 <h4 class="product-name"><strong>[Bản Đặc Biệt] COP CRAFT - Cảnh Sát Đến Từ Hai Thế Giới Shouji Gato</strong></h4>
+                                 <h4>
+                                     <small>Chiến tranh là một điều không đáng...</small>
+                                 </h4>
+                             </div>
+                             <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row px">
+                                 <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                    <h6><strong class="price">96000</strong>VNĐ</h6>
+                                 </div>
+                                 <div class="col-4 col-sm-4 col-md-4">
+                                     <div class="quantity">
+                                         <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                                size="2">
+                                     </div>
+                                 </div>
+                                 <div class="col-2 col-sm-2 col-md-2 text-right">
+                                     <button type="button" class="btn btn-outline-danger btn-xs">
+                                         <i class="fa fa-trash" aria-hidden="true"></i>
+                                     </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <hr>
+                         <!-- END PRODUCT -->
+                         <!-- PRODUCT -->
+                         <div class="row row1">
+                             <div class="col-12 col-sm-12 col-md-2 text-center">
+                                     <img class="img-responsive" src="./images/Sach-1.1.jpg" alt="prewiew" width="120" height="80">
+                             </div>
+                             <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6 x">
+                                 <h4 class="product-name"><strong>Mắt Biếc (Tái Bản 2019) </strong></h4>
+                                 <h4>
+                                     <small>Em muốn nghe câu “Mừng em đã về”...</small>
+                                 </h4>
+                             </div>
+                             <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row px">
+                                 <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                     <h6><strong class="price">45000</strong>VNĐ</h6>
+                                 </div>
+                                 <div class="col-4 col-sm-4 col-md-4">
+                                     <div class="quantity">
+                                         <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                                size="2">
+                                     </div>
+                                 </div>
+                                 <div class="col-2 col-sm-2 col-md-2 text-right">
+                                     <button type="button" class="btn btn-outline-danger btn-xs">
+                                         <i class="fa fa-trash" aria-hidden="true"></i>
+                                     </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <hr>
+                         <!-- END PRODUCT -->
+                     
+                 </div>
+                 <div class="card-footer" >
+                     <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
+                         <div class="row">
+                             <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Mã giảm giá">
+                             </div>
+                             <div class="col-6">
+                                 <input type="submit" class="btn btn-default" value="Sử Dụng">
+                             </div>
+                         </div>
+                     </div>
+                     <div class="pull-right" style="margin: 10px">
+                         <a href="Onestepcheckout-1.html" class="btn btn-success pull-right">Thanh Toán</a>
+                         <div class="pull-right" style="margin: 5px">
+                             Tổng Tiền: <b class="cart-total-price">141000 VNĐ</b>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+     </div>
+     <div class="clearfix"></div>
+     <div id="main"></div>
+     <footer>
+         <div class="splitter"></div>
+        <ul>
+     <li>
+        
+         <div class="text">
+             <h4>Người Mua</h4>
+             <div><a href="#">giải quyết khiếu nại</a></div>
+             <div> <a href="#">hướng dẫn mua hàng</a></div>
+             <div> <a href="#">chính sách đổi trả</a></div>
+             <div> <a href="#">chăm sóc khách hàng</a></div>
+             <div> <a href="#">nạp tiền điện thoại</a></div>
+         </div>
+     </li>
+     <li>
+         
+         <div class="text">
+             <h4>Hỗ Trợ</h4>
+             <div><a href="#">Các câu hỏi thường gặp</a></div>
+             <div><a href="#">gửi yêu cầu hỗ trợ</a></div>
+             <div><a href="#">hướng dẫn đặt hàng</a></div>
+             <div><a href="#">chính sách đổi trả</a></div>
+             <div><a href="#">hướng dẫn mua trả góp</a></div>
+         </div>
+     </li>
+     <li>
+        
+         <div class="text">
+             <h4>Shop</h4>
+             <div><a href="#">giới thiệu</a></div>
+             <div><a href="#">chính sách thanh toán</a></div>
+             <div><a href="#">chính sách bảo mật thông tin cá nhân</a></div>
+             <div><a href="#">cính sách giải quyết khiếu nại</a></div>
+             <div><a href="#">điều khoản sử dụng</a></div>
+         </div>
+     </li>
+ </ul>
+ 
+        <div class="bar">
+     <div class="bar-wrap">
+         <ul class="links">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">License</a></li>
+             <li><a href="#">Contact Us</a></li>
+             <li><a href="#">Advertise</a></li>
+             <li><a href="#">About</a></li>
+         </ul>
+ 
+         <div class="social">
+             <a href="#" class="fb">
+                 <span data-icon="f" class="icon"></span>
+                 <span class="info">
+                     <span class="follow">Become a fan Facebook</span>
+                     <span class="num">9,999</span>
+                 </span>
+             </a>
+ 
+             <a href="#" class="tw">
+                 <span data-icon="T" class="icon"></span>
+                 <span class="info">
+                     <span class="follow">Follow us Twitter</span>
+                     <span class="num">9,999</span>
+                 </span>
+             </a>
+ 
+             <a href="#" class="rss">
+                 <span data-icon="R" class="icon"></span>
+                 <span class="info">
+                     <span class="follow">Subscribe RSS</span>
+                     <span class="num">9,999</span>
+                 </span>
+             </a>
+         </div>
+         <div class="clear"></div>
+         <div class="copyright">&copy;  2020 All Rights Reserved</div>
+     </div>
+ </div>
+     </footer>
+
+     <script>
+             var remove_cart = document.getElementsByClassName("btn-outline-danger");
+            for (var i = 0; i < remove_cart.length; i++) {
+                console.log(remove_cart.length);
+                var button = remove_cart[i]
+            button.addEventListener("click", function () {
+                var button_remove = event.target
+                var remove_1 = button_remove.parentElement.parentElement;
+                var remove_2 = remove_1.parentElement;
+                console.log(remove_2);
+                remove_2.remove()
+                updateCart()
+            })
+            }
+
+             // thay đổi số lượng
+        var quantity_input = document.getElementsByClassName("qty");
+        for (var i = 0; i < quantity_input.length; i++) {
+          var input = quantity_input[i];
+          input.addEventListener("change", function (event) {
+            var input = event.target
+            if (isNaN(input.value) || input.value <= 0) {
+              input.value = 1;
+            }
+            updateCart()
+          })
+        }
+
+
+            function updateCart(){
+                var cart_item = document.getElementsByClassName("card-body")[0];
+                var cart_rows = cart_item.getElementsByClassName("row1");
+                var total = 0;
+                for(var i = 0; i < cart_rows.length; i++){
+                    var cart_row = cart_rows[i]
+                    var price_item = cart_row.getElementsByClassName("price")[0]
+
+                    console.log(price_item.length)
+                    var quantity_item = cart_row.getElementsByClassName("qty")[0]
+                    var price_x = parseFloat(price_item.innerText)
+                    var quantity = quantity_item.value // lấy giá trị trong thẻ input
+                    total = total + (price_x * quantity)
+                }
+                document.getElementsByClassName("cart-total-price")[0].innerText= total + ' VNĐ'
+            }
+     </script>
+
+</body>
+</html>

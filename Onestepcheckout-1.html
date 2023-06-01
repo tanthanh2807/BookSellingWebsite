@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One step checkout</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Onestepcheckout.css">
+    
+
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <input type="text" class="form-control" placeholder="Tìm Kiếm...">
+        </div> 
+        <div class="menu-bar">
+            <ul>
+                <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>Giỏ Hàng</a></li>    
+                <li><a href="Account.html">Đăng Nhập</a></li>    
+                <li><a href="Register.html">Đăng Kí</a></li>    
+            </ul>   
+        </div> 
+    </div>
+
+    <div class="container-1">
+        <div class="book-checkout-alert">
+            <div class="img-warning">
+                <i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
+            </div>
+
+            <div class="warning-content">
+                Bạn đã đăng nhập? 
+                <span><a href="Account.html">Đăng Nhập Ngay</a></span>
+            </div>
+
+        </div>
+        <div class="book-checkout-address">
+            <div class="book-checkout-address-title">
+                Địa Chỉ Giao Hàng
+            </div>
+            <div class="book-checkout-address-content">
+                <div class="book-checkout-address-block">
+                    <div class="book-checkout-address-inputbox">
+                        <label>Họ và tên người nhận</label>
+                        <input type="text" placeholder="Nhập họ và tên người nhận">
+                    </div>
+                    <div class="book-checkout-address-inputbox">
+                        <label>Email</label>
+                        <input type="text" placeholder="Nhập Email">
+                    </div>
+                    <div class="book-checkout-address-inputbox">
+                        <label>Số Điện Thoại</label>
+                        <input type="text" placeholder="Nhập Số Điện Thoại">
+                    </div>
+                    <div class="book-checkout-address-inputbox">
+                        <label>Quốc Gia</label>
+                        <select class="form-control-1" id="sel1" name="sellist1">
+                            <option>Việt Nam</option>
+                            <option>Japan</option>
+                            <option>UK</option>
+                            <option>Germany</option>
+                          </select>
+                    </div>
+                    <div class="book-checkout-address-inputbox">
+                        <label>Tỉnh/Thành Phố</label>
+                        <select class="form-control-1" id="sel1" name="sellist1">
+                            <option>TP.HCM</option>
+                            <option>Hà Nội</option>
+                            <option>Cần Thơ</option>
+                            <option>Hải Phòng</option>
+                            <option>Đà Nẵng</option>
+                            <option>huế</option>
+                          </select>
+                    </div>
+                    <div class="book-checkout-address-inputbox">
+                        <label>Quận/huyện</label>
+                        <select class="form-control-1" id="sel1" name="sellist1">
+                            
+                          </select>
+                    </div>
+                    <div class="book-checkout-address-inputbox">
+                        <label>Phường/Xã</label>
+                        <select class="form-control-1" id="sel1" name="sellist1">
+                            
+                        </select>
+                    </div>
+                    <div class="book-checkout-address-inputbox">
+                        <label>Địa Chỉ Nhận Hàng</label>
+                        <input type="text" placeholder="Nhập Địa Chỉ Nhận Hàng">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+        <div class="block-checkout-shipping">
+            <div class="book-checkout-address-title">
+                Phương Thức Vận Chuyển
+            </div>
+            <div class="block-checkout-shipping-content">
+                <div class="shipping-title">
+                    
+                    <div style="margin-left: 10px; margin-bottom: 10px;">
+                        Miễn phí cho đơn hàng 140k HCM, HN và 250k cho các tỉnh khác
+                    </div>
+                   
+                        <p><input type="radio" name="rd" id="rd1"><label for="rd1">Giao hàng tiêu chuẩn: 25.000đ</label></p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="block-checkout-paymentmethod">
+            <div class="book-checkout-address-title">
+                Phương Thức Vận Chuyển
+            </div>
+            <div class="block-checkout-paymentmethod-content">
+                <div class="wrapper">
+                    <p><input type="radio" name="rd" id="rd2"><label for="rd2">Chuyển khoản ngân hàng</label></p>
+                    <p><input type="radio" name="rd" id="rd3"><label for="rd3">Thanh toán khi nhận hàng</label></p>
+                    <p><input type="radio" name="rd" id="rd4"><label for="rd4">Internet banking</label></p>
+                    <p><input type="radio" name="rd" id="rd5"><label for="rd5">Visa / master</label></p>
+                    <p><input type="radio" name="rd" id="rd6"><label for="rd6">ZaloPay Wallet</label></p>
+                    <p><input type="radio" name="rd" id="rd7"><label for="rd7">MomoPay Wallet</label></p>
+
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="block-checkout-block">
+        <div class="book-checkout-address-title">
+            Quà Tặng / Mã 
+        </div>
+        <div class="block-checkout-block-content">
+            <div class="book-checkout-address-block1">
+                <div class="book-checkout-address-inputbox v1" style="margin-bottom: 20px; padding-bottom: 20px;">
+                    <label>Mã KM</label>
+                    <input type="text" placeholder="Nhập Mã">
+                </div>
+              
+
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 20px;">
+    <div class="block-checkout-test">
+        <div class="book-checkout-address-title">
+            Kiểm Tra Lại đơn hàng
+        </div>
+        <div class="block-checkout-test-content">
+            <div class="checkout-product-items">
+                <div class="product-items-img">
+                    <img src="./images/bxh-3.jpg" alt="">
+                </div>
+                <div class="product-item-content">
+                    <div class="items-title">
+                        [Bản Đặc Biệt] COP CRAFT - Cảnh Sát Đến Từ Hai Thế Giới Shouji Gato
+                    </div>
+                    <div class="items-price">
+                        96.000đ
+                    </div>
+                    <div class="items-count">
+                        Số Lượng: 3
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="checkout-product-items">
+                <div class="product-items-img">
+                    <img src="./images/Sach-1.1.jpg" alt="">
+                </div>
+                <div class="product-item-content">
+                    <div class="items-title">
+                        Mắt Biếc (Tái Bản 2019)
+                    </div>
+                    <div class="items-price">
+                        45.000đ
+                    </div>
+                    <div class="items-count">
+                        Số Lượng: 1
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+       
+    </div>
+    <div class="pay">
+        <div class="book-checkout-address-title">
+            Kiểm Tra Lại đơn hàng
+        </div>
+        <div class="kt">
+            <div class="tt">
+                Thành Tiền: 333.000đ
+            </div>
+            <div class="ship">
+                Phí Vận Chuyển (Giao hàng tiêu chuẩn): 25.000đ
+            </div>
+            <div class="sum-price">
+                 
+                <label>Tổng số tiền (gồm VAT):</label>
+                <label style="color: orange;">358.000đ</label>
+            </div>
+        </div>
+        <div class="more-flash" style="margin-top: 20px;">
+            <button>Thanh Toán</button>
+        </div>
+    </div>
+</div>
+    
+
+   
+    </div>
+
+    <div id="main"></div>
+    <footer>
+        <div class="splitter"></div>
+       <ul>
+    <li>
+       
+        <div class="text">
+            <h4>Người Mua</h4>
+            <div><a href="#">giải quyết khiếu nại</a></div>
+            <div> <a href="#">hướng dẫn mua hàng</a></div>
+            <div> <a href="#">chính sách đổi trả</a></div>
+            <div> <a href="#">chăm sóc khách hàng</a></div>
+            <div> <a href="#">nạp tiền điện thoại</a></div>
+        </div>
+    </li>
+    <li>
+        
+        <div class="text">
+            <h4>Hỗ Trợ</h4>
+            <div><a href="#">Các câu hỏi thường gặp</a></div>
+            <div><a href="#">gửi yêu cầu hỗ trợ</a></div>
+            <div><a href="#">hướng dẫn đặt hàng</a></div>
+            <div><a href="#">chính sách đổi trả</a></div>
+            <div><a href="#">hướng dẫn mua trả góp</a></div>
+        </div>
+    </li>
+    <li>
+       
+        <div class="text">
+            <h4>Shop</h4>
+            <div><a href="#">giới thiệu</a></div>
+            <div><a href="#">chính sách thanh toán</a></div>
+            <div><a href="#">chính sách bảo mật thông tin cá nhân</a></div>
+            <div><a href="#">cính sách giải quyết khiếu nại</a></div>
+            <div><a href="#">điều khoản sử dụng</a></div>
+        </div>
+    </li>
+</ul>
+
+       <div class="bar">
+    <div class="bar-wrap">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="social">
+            <a href="#" class="fb">
+                <span data-icon="f" class="icon"></span>
+                <span class="info">
+                    <span class="follow">Become a fan Facebook</span>
+                    <span class="num">9,999</span>
+                </span>
+            </a>
+
+            <a href="#" class="tw">
+                <span data-icon="T" class="icon"></span>
+                <span class="info">
+                    <span class="follow">Follow us Twitter</span>
+                    <span class="num">9,999</span>
+                </span>
+            </a>
+
+            <a href="#" class="rss">
+                <span data-icon="R" class="icon"></span>
+                <span class="info">
+                    <span class="follow">Subscribe RSS</span>
+                    <span class="num">9,999</span>
+                </span>
+            </a>
+        </div>
+        <div class="clear"></div>
+        <div class="copyright">&copy;  2020 All Rights Reserved</div>
+    </div>
+</div>
+    </footer>
+</body>
+</html>

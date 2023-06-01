@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lí Người Dùng</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="container-fluid fixed-top py-3 bg-bk">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
+
+            </div>
+            <div class="col px-3 px-md-0">
+                <!-- toggler -->
+                <a data-toggle="collapse" href="#" data-target=".collapse" role="button" class="p-1">
+                    <i class="fa fa-bars fa-lg"></i>
+                </a>
+            </div>
+            <div class="top-prof">
+                <div class="prof-name">
+                    xin chào, Nhật
+                </div>
+                <div class="prof-img">
+                    <img src="./images/ava1.jpg" alt="Paris" width="30" height="30">
+                </div>
+                
+                <div class="dropdown tdrop">
+                    <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dr-mn">
+                      <li class="lo"><a href="index.html">Đăng Xuất</a></li>
+                      <li class="l1"><a href="#">Tùy chọn</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid px-0 h-100 dr-lf">
+        <div class="row vh-100 collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 p-0 vh-100 h-100 text-white w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
+                <!-- fixed sidebar -->
+                <div class="navbar-dark bg-ligh position-fixed h-100 w-sidebar x">
+                    <button class="dropdown-btn">Quản Lí Sản Phẩm
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container drp-0">
+                        <a href="Adminliterary.html">Sách Trong Nước</a>
+                        <a href="#">Sách Nước Ngoài</a>
+                        
+                      </div>
+                      
+                     
+                      <button class="dropdown-btn">Quản Lí User 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                        <a href="UserManager.html">Tài Khoản Thường</a>
+                      </div>
+                      <button class="dropdown-btn">Quản Lí Giao Dịch
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                          
+                        <a href="DealManager.html">Hóa Đơn</a>
+                        <a href="Count.html">Số Lượng Hàng</a>
+                      </div>
+                </div>
+                    
+            
+        </div>
+            <div class="col p-3">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li class="xt1">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <a href="HomeAdmin.html">Trang Chủ</a>
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            Quản Lí User
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            <a href="Adminliterary.html">Tài Khoản Thường</a>
+                        </li>
+                        <div class="f-search">
+                            <form action="" class="example">
+                                <input type="text" placeholder="Search.." name="search2">
+                                 <button type="submit"><i class="fa fa-search"></i></button>
+                            
+                            </form>
+                        </div>
+                    </ul>
+                   
+                </div>
+                <div class="c-title">
+                    <div class="card" style="width:230px">
+                        <img class="card-img-top" src="./images/ava1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Tài Khoản: John Doe</h4>
+                          <p class="card-text">Mã Thành Viên: M435</p>
+                          <a href="#" class="btn btn-primary" 
+                          onclick="document.getElementById('id01').style.display='block'">
+                              xem thông tin</a>
+                          <button class="btn btn-primary">xóa</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width:230px">
+                        <img class="card-img-top" src="./images/ava1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Tài Khoản: John Doe</h4>
+                          <p class="card-text">Mã Thành Viên: M435</p>
+                          <a href="#" class="btn btn-primary">xem thông tin</a>
+                          <button class="btn btn-primary">xóa</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width:230px">
+                        <img class="card-img-top" src="./images/ava1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Tài Khoản: John Doe</h4>
+                          <p class="card-text">Mã Thành Viên: M435</p>
+                          <a href="#" class="btn btn-primary">xem thông tin</a>
+                          <button class="btn btn-primary">xóa</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width:230px">
+                        <img class="card-img-top" src="./images/ava1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Tài Khoản: John Doe</h4>
+                          <p class="card-text">Mã Thành Viên: M435</p>
+                          <a href="#" class="btn btn-primary">xem thông tin</a>
+                          <button class="btn btn-primary">xóa</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width:230px">
+                        <img class="card-img-top" src="./images/ava1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Tài Khoản: John Doe</h4>
+                          <p class="card-text">Mã Thành Viên: M435</p>
+                          <a href="#" class="btn btn-primary">xem thông tin</a>
+                          <button class="btn btn-primary">xóa</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width:230px">
+                        <img class="card-img-top" src="./images/ava1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Tài Khoản: John Doe</h4>
+                          <p class="card-text">Mã Thành Viên: M435</p>
+                          <a href="#" class="btn btn-primary">xem thông tin</a>
+                          <button class="btn btn-primary">xóa</button>
+                        </div>
+                    </div>
+                      
+                      
+                      
+                </div>
+                <div class="clearfix"></div>
+                <div class="cl">
+                    <ul class="pagination c">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                 </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="Adminliterary.html" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                 class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container-1 d-bl">
+                <label>Tên Tài Khoản:<b> Lê Thiện Nhân</b></label>
+                <br/>
+                <label>Mã Thành Viên:<b> M436</b></label>
+                <br/>
+                <label>Email:<b>ltnhan.19ce@sict.udn.vn</b></label>
+                <br/>
+                <label>Số Lượng Sản Phẩm Đã Mua:<b> 30 sản phẩm</b></label>
+                <br/>
+                <label>Thành Tiền:<b> 230.000đ</b></label>
+                <br/>
+                <label>Phản Hồi:<b> 5 bình luận</b></label>
+                
+            </div>
+            <div class="container-1" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" 
+                class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+
+    </div>
+    <!--Modal -->
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
